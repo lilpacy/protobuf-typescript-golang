@@ -1,5 +1,7 @@
-go mod tidy
-go run main.go
+```sh
+go mod tidy  
+go run main.go  
 
-yarn
-npx ts-node main.ts
+yarn  
+npx ts-node main.ts  
+```
