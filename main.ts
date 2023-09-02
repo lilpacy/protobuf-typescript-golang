@@ -1,18 +1,19 @@
-import { Status } from "./common/common_pb";
+import { Status } from './common/common_pb';
 
 function doSomething(status: keyof typeof Status) {
   switch (status) {
     case 'ACTIVE':
-      console.log("ステータスはアクティブです");
+      console.log('ステータスはアクティブです');
       break;
     case 'INACTIVE':
-      console.log("ステータスは非アクティブです");
+      console.log('ステータスは非アクティブです');
       break;
     case 'UNKNOWN':
-      console.log("ステータスは不明です");
+      console.log('ステータスは不明です');
       break;
     default:
-      throw new Error("未知のステータス");
+      const _: never = status;
+      throw new Error('未知のステータス');
   }
 }
 
