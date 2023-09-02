@@ -1,0 +1,13 @@
+{
+  "name": "protobuf-typescript-golang",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "lilpacy <revivedtomorrow@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/google-protobuf": "^3.15.6",
+    "google-protobuf": "^3.21.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
