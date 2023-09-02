@@ -1,7 +1,9 @@
 ```sh
-go mod tidy  
-go run main.go  
+go mod tidy
+protoc --go_out=. common.proto
+go run main.go
 
-yarn  
-npx ts-node main.ts  
+yarn
+protoc --ts_out=common common.proto
+npx ts-node main.ts
 ```
